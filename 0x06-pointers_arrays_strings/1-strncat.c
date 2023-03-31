@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-  * *_strncpy - copies string
-  * @dest: destination string
-  * @src: source string
-  * @n: number of strings
-  * Return: destination string
+  * _strncat - Concatenates two strings
+  * @dest: The destination value
+  * @src: The source value
+  * @n: The limit of the concatenation
+  *
+  * Return: A pointer to the resulting string dest
   */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int destlen = 0;
@@ -19,6 +19,6 @@ char *_strncat(char *dest, char *src, int n)
 	for (i = 0 ; src[i] != '\0' ; i++)
 		srclen++;
 	for (i = 0 ; i < n ; i++)
-		dest[destlen + 1] = src[i];
+		dest[destlen + i] = src[i];
 	return (dest);
 }
