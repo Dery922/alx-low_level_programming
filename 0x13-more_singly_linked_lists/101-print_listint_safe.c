@@ -25,7 +25,7 @@ hare = (head->next)->next;
 
 while (hare)
 {
-if (tortoise == hare) 
+if (tortoise == hare)
 {
 tortoise = head;
 while (tortoise != hare)
@@ -65,7 +65,7 @@ size_t nodes, index = 0;
 nodes = looped_listint_len(head);
 
 if (nodes == 0)
-{ 
+{
 for (; head != NULL; nodes++)
 {
 printf("[%p] %d\n", (void *)head, head->n);
